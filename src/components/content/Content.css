@@ -1,0 +1,125 @@
+.data-container{
+    margin-top: 30px;
+}
+
+.data-all{
+    display: flex;
+}
+
+.data-coin{
+    border-right: 1px solid rgb(223, 222, 222);
+    border-bottom: 1px solid rgb(223, 222, 222);
+    border-left: 1px solid rgb(223, 222, 222);
+    width: 50%;
+    justify-content: center;
+    padding: 20px;
+    cursor: pointer;
+}
+
+.data-coin i{
+    font-size: 40px;
+    margin: 20px;
+    width: 10%;
+}
+
+.data-coin span{
+    font-size: 50px;
+    margin: 10px;
+    width: 90%;
+}
+
+.data-graph{
+    border-right: 1px solid rgb(223, 222, 222);
+    border-bottom: 1px solid rgb(223, 222, 222);
+    border-left: 1px solid rgb(223, 222, 222);
+    width: 50%;
+    text-align: left;
+    justify-content: left;
+    padding: 20px;
+    display: flex;
+}
+
+.data-graph label{
+    font-size: 25px;
+    margin: 1px;
+    font-weight:bold;
+}
+
+.data-graph .data-label{
+    font-size: 25px;
+    font-weight:normal;
+}
+
+.data-chart{
+    width: 30%;
+    margin-left: 20px;
+}
+
+.data-converter{
+    border-radius: 10px;
+    width: 40px;
+    height: 35px;
+    outline: none;
+    font-size: 1rem;
+}
+
+@media screen and (max-width: 900px) {
+    .data-coin i{
+        font-size: 50px;
+        margin: 10px;
+        width: 10%;
+    }
+    
+    .data-coin span{
+        font-size: 40px;
+        margin: 10px;
+        width: 90%;
+        display: inherit;
+    }
+
+    .data-graph label{
+        font-size: 20px;
+        margin: 10px;
+        font-weight:bold;
+    }
+
+    .data-graph .data-label{
+        font-size: 15px;
+        font-weight:normal;
+    }
+}
+
+@media screen and (max-width: 713px) {
+    .data-coin i{
+        font-size: 50px;
+        margin: 10px;
+        width: 10%;
+    }
+    
+    .data-coin span{
+        font-size: 30px;
+        margin: 10px;
+        width: 90%;
+    }
+
+    .data-graph label{
+        font-size: 15px;
+        margin: 10px;
+        font-weight:bold;
+    }
+
+    .data-graph .data-label{
+        font-size: 10px;
+        font-weight:normal;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .data-graph{
+        flex-direction: column;
+    }
+
+    .data-chart{
+        width: 80%;
+    }
+}

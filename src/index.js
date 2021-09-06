@@ -1,17 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
 import App from './App';
-import reportWebVitals from './reportWebVitals';
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+//Se importa el provider de la libreria react-redux para cargar los estados en toda la aplicacion
+import { Provider } from 'react-redux';
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+//Se importa la store creada la cual alimenta el Provider con todos los estados asignados
+import {store} from './redux/index';
+
+ReactDOM.render(<Provider store={store}><App /></Provider>,document.getElementById('root'));
+
